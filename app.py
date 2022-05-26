@@ -3,8 +3,8 @@
 import argparse
 
 arg_parser = argparse.ArgumentParser()
-arg_parser.add_argument("--x-length", help="X向长度(mm)", type=int)
-arg_parser.add_argument("--y-length", help="Y向长度(mm)", type=int)
+arg_parser.add_argument("--x-length", help="X向长度(mm)", type=int,required=True)
+arg_parser.add_argument("--y-length", help="Y向长度(mm)", type=int,required=True)
 
 arg_parser.add_argument("--line-width", default=1.5,
                         help="行距，一般为刀尖宽度/2", type=float)
